@@ -1,0 +1,43 @@
+<%- include('header.html'); -%>
+<a-scene>
+  <a-assets>
+    <a-asset-item id="terrain" src="/models/terrain.gltf"></a-asset-item>
+    <img id="cenario" src="/images/cenario.jpg" />
+
+    <!-- <script id="especialista" type="text/html">
+      <a-entity vimeo="id: ${video1}">
+        <a-plane scale="3 3.275"></a-plane>
+      </a-entity>
+    </script> -->
+  </a-assets>
+  
+  <a-camera look-controls></a-camera>
+
+  <!-- <a-entity vimeo="id: 362820833">
+    <a-plane scale="2 2.275" position="0 0 -3.0"></a-plane>
+  </a-entity> -->
+
+  <a-entity id="especialistas" layout="type: circle; radius: 4" position="0 0 0" rotation="0 -25 0">
+
+    <a-entity vimeo="id: 362822225" rotation="0 280 0">
+      <a-plane scale="2 2.275"></a-plane>
+    </a-entity>
+
+    <a-entity vimeo="id: 362820953" rotation="0 150 0">
+      <a-plane scale="2 2.275"></a-plane>
+    </a-entity>
+
+    <a-entity vimeo="id: 362820833" rotation="0 25 0">
+      <a-plane scale="2 2.275"></a-plane>
+    </a-entity>
+
+    <!-- <a-entity template="src: #especialista" rotation="0 280 0" data-nome="garolo" data-video1="362822225" data-video2="" data-video3=""></a-entity>
+    <a-entity template="src: #especialista" rotation="0 150 0" data-nome="favareto" data-video1="362820953" data-video2="" data-video3=""></a-entity>
+    <a-entity template="src: #especialista" rotation="0 0 0" data-nome="ana" data-video1="362820833" data-video2="" data-video3=""></a-entity> -->
+     
+  </a-entity>
+
+  <a-sky id="background" radius="10" src="#cenario" rotation="0 0 0"></a-sky>
+
+</a-scene>
+<%- include('footer.html'); -%>

@@ -1,0 +1,4 @@
+[submodule "ext/vimeo-threejs-player"]
+	path = ext/vimeo-threejs-player
+	url = git@github.com:vc2b/bayer_especialistas.git
+	ignore = dirty
